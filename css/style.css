@@ -1,6 +1,4 @@
 
-
-
 #primera{
 	width:100%;
 }
@@ -12,8 +10,6 @@
 	padding-top: 8px;
 	margin-left: 20px;
 	margin-right: 20px;}
-
-
 .logo{
 height: 60px;
 padding: 10px;
@@ -31,7 +27,6 @@ text-align: center;}
 padding: 10px;
 }
 
-
 .card{margin-top: 50px;
     box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.14);
     padding: 5px;
@@ -41,8 +36,7 @@ padding: 10px;
 }
 .carousel{
 	margin-top: 50px;
-	margin-left: 4vh;
-	width: 92%;
+	width:100%	;
 	display: flex;
 	text-align:center;
 }
@@ -59,4 +53,25 @@ h1{ font-family: 'Roboto';
 }
 .navbar-collapse{
 	margin-left: 20px;
+}
+.navbar-toggler-icon {
+	background-image: url(images/.logo1);
+}
+.iniciocontacto{
+	font-family: roboto;
+	height: 60px;
+	padding-top: 5px;
+	margin-left:5px;
+	margin-right: 5px;
+	display: inline-block;
+}
+.logocontacto{
+	height: 60px;
+	padding: 10px;
+	background-color:#FFFFFF ;
+	margin-left: 110px;
+	}
+.espaciocontacto{
+	margin-bottom: 50px;
+	margin-top: 50px;
 }
