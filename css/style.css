@@ -38,10 +38,10 @@ padding: 10px;
 }
 .titulo{ 
 	margin-top: 30px;
-	font-family: 'Roboto';
+	font-family: 'Red Hat Display', sans-serif;
 	font-style: normal;
-	font-weight: 300;
-	font-size: 80px;}
+	font-weight: 800;
+	font-size: 70px;}
 
 .navbar-toggler-icon{
 	display: flex;
@@ -73,4 +73,10 @@ padding: 10px;
 .espaciocontacto{
 	margin-bottom: 50px;
 	margin-top: 50px;
+}
+.dropdown-item{
+	font-family: 'Red Hat Display', sans-serif;
+}
+.nav-link{
+	font-family: 'Red Hat Display', sans-serif;
 }
