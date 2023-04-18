@@ -17,10 +17,6 @@ background-color:#FFFFFF ;
 }
 .txt {margin-top: 20vh;}
 
-.espacios{
-	padding-top: 100px;
-	padding-bottom: 100px;}
-
 .centrado{
 text-align: center;}
 .content{
@@ -40,9 +36,12 @@ padding: 10px;
 	display: flex;
 	text-align:center;
 }
-h1{ font-family: 'Roboto';
+.titulo{ 
+	margin-top: 30px;
+	font-family: 'Roboto';
 	font-style: normal;
-	font-weight: 100;}
+	font-weight: 300;
+	font-size: 80px;}
 
 .navbar-toggler-icon{
 	display: flex;
