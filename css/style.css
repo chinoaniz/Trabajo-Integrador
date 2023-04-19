@@ -1,6 +1,13 @@
 
 #primera{
+	position:absolute;
 	width:100%;
+}
+#logo{
+	position:relative;
+	width:10%;
+	margin-left: 1.5%;
+	margin-top: 1.5%;
 }
 
 .logo1{
@@ -41,7 +48,7 @@ padding: 10px;
 	font-family: 'Red Hat Display', sans-serif;
 	font-style: normal;
 	font-weight: 800;
-	font-size: 70px;}
+	font-size: 35px;}
 
 .navbar-toggler-icon{
 	display: flex;
