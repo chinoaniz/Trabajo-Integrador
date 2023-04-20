@@ -69,15 +69,15 @@
 								</div>
 								<div class="col-md-6">
 									<label for="inputLastName" class="form-label">Apellido</label>
-									<input type="lastname" class="form-control" id="inputLastName">
+									<input type="apellido" class="form-control" id="inputLastName">
 								</div>
 								<div class="col-md-8">
 									<label for="inputEmail" class="form-label">Email</label>
-									<input type="email" class="form-control" id="Position" placeholder="insertesumail@gmail.com">
+									<input type="email" class="form-control" id="Position" placeholder="@gmail.com">
 								</div>
 								<div class="col-md-4">
-									<label for="inputAddress2" class="form-label">Celular </label>
-									<input type="text" class="form-control" id="Celular" placeholder="+54 (code area) + Numero">
+									<label for="inputPhone" class="form-label">Celular </label>
+									<input type="phone" class="form-control" id="Celular" placeholder="+54 (area) + Numero">
 							</div>
 								<div class="col-md-4">
 									<label for="inputCity" class="form-label">Ciudad</label>
@@ -89,19 +89,25 @@
 								</div>
 								<div class="col-md-4">
 									<label for="inputZip" class="form-label">Zip</label>
-									<input type="text" class="form-control" id="inputZip">
+									<input type="zip" class="form-control" id="inputZip">
 								</div>
 								<div class="col-md-12">  <hr>             
 								</div>
 								<div class="col-md-12">
-								<textarea class="form-control" placeholder="Deje aquí su mensaje..." id="floatingTextarea2Disabled" style="height: 100px" disabled></textarea>
-									<label for="floatingTextarea2Disabled"></label>   
+								<textarea class="form-control" placeholder="Deje aquí su mensaje..." id="floatingTextarea2Enabled" style="height: 100px" enabled></textarea>
+									<label for="floatingTextarea2Enabled"></label>   
 								</div>
 							<div class="col-md-9"> 
+								<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="checkTC">
+								<label class="form-check-label" for="checkTC">
+								Acepto los términos y condiciones
+								</label>
+							</div>
+							
 								</div>
 							<div  class="col-md-3"> 
-								<button id="enviar"class="btn btn-primary" type="submit">Enviar</button>  </div>         
-							
+								<button id="enviar"class="btn btn-primary" type="submit">Enviar</button>  </div>
 							</form>  
 					</div>
 				<footer>
@@ -161,6 +167,14 @@
 						</footer>
 					  </div>
 				</footer>
+	<script>
+	document.querySelector("#FormContacto").addEventListener("submit", function(e) {
+	e.preventDefault();
+	const formData = new FormData(document.querySelector("#FormContacto"));
+	fetch("/enviar-formulario", { method: "POST", body: formData });
+		alert("Gracias por enviar el formulario. Nos pondremos en contacto contigo pronto.");
+		});
+	</script>
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 		
